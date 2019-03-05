@@ -22,6 +22,8 @@
     padding-right: 20px;
 }
 
+
+
 /* introduction page*/
 .intro{
     position:fixed;
@@ -33,3 +35,14 @@
     width: 100%;
     height: 100%;
 }
+
+#login{
+   vertical-align: center;
+
+}
+
+#container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+};
