@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>InterAcT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- style sheet links-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="styles.css" type="text/css" rel="stylesheet">
+
+  <!-- user interaction functionalities-->
+  <script src="func.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  
+</head>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- navigation-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#home"><img src="logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">The InterAcT Story</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#elearning">E-Learning</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- landing section-->
+<!-- side menu for font and colour changes-->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="sidenav-align">
+   
+      <p>Font Size</p>
+        <button type="button" class="btn btn-outline-light centre-btn" id="decrease">A-</button> 
+        <button type="button" class="btn btn-outline-light centre-btn" id="increase">A+</button>
+        <button type="button" class="btn btn-outline-light centre-btn" id="resetFontSize">Reset font size</button>
+      <p>Font Type</p>
+        <button type="button" class="btn btn-outline-light centre-btn" id="lato">Lato</button> 
+        <button type="button" class="btn btn-outline-light centre-btn" id="nunito">Nunito</button>
+        <button type="button" class="btn btn-outline-light centre-btn" id="arial">Arial</button>
+        <button type="button" class="btn btn-outline-light centre-btn" id="arimo">Arimo</button>
+        <button type="button" class="btn btn-outline-light centre-btn" id="resetFont">Reset font</button>
+        <p>Colour Scale</p>
+        <button type="button" class="btn btn-outline-light centre-btn" id="grey">Turn page to greyscale</button> 
+        <button type="button" class="btn btn-outline-light centre-btn" id="resetGrey">Reset grey scale</button>
+        
+  </div>
+</div>
+
+
+
+<div class="jumbotron text-left">
+  <!-- span for opening side menu -->
+  <div id="nav-div">
+    <button type="button" class="btn btn-access" onclick="openNav()">&#9776; Colour & font change</button>
+    <!--<span style="font-size:12px;cursor:pointer;background-color:#008080;padding: 10px 10px 10px 10px"  onclick="openNav()">&#9776; Colour & font change</span>-->
+    </div>
+
+    <div class="row">
+    <div class="col-sm-7">
+        <div class="home-left">
+                <p>Made with experience and knowledge</p>
+                <h1>InterAcT - </h1>
+                <h1>Accomplish and Thrive</h1>
+                <button type="button" class="btn"><a href="#products">Get our product</a></button>
+        </div>   
+    </div>
+    <div class="col-sm-5">
+    <img src="iphone.png">
+    
+
+    </div>
+</div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Who we are</h2><br>
+      <h4>We are a Start-Up Company called InterAct (Accomplish and Thrive), based in Psychology TCD and ADAPT Centre. Our aim is to make the life easier for autist people and enable better life experiences for them.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>What We Do</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<div id="products" class="container-fluid">
+  <div class="text-center">
+    <h2>Our products</h2>
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="placeholder"></div>
+      <div class="col-sm-3" id="placeholder"></div>
+      <div class="col-sm-3" id="placeholder"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
+      <div class="col-sm-3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
+      <div class="col-sm-3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
+    </div>
+  </div>
+  </div>
+</div>
+  
+  <div class="container">
+    
+    <div class="row row-content align-items-center">
+      <div  class="col-sm-6">
+        <img src="iphone.png">
+      </div>
+      <div  class="col-sm-6">
+        <h2>InterAcT Airport App</h2>
+        <a href="https://play.google.com" target="_blank" id="prod_img"><img src="google_play.png" alt="Get on Google Play"></a>
+        <a href="https://www.apple.com/ie/ios/app-store/" target="_blank" id="prod_img"><img src="app_store.png" alt="Get on App Store"></a>
+      </div>
+    </div>
+  </div>
+
+<!-- Container (Portfolio Section) -->
+<div class="container" id="learn">
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 col-md-3">
+            <h1>Autism</h1>
+        </div>
+        <div class="col col-sm-4 col-md-9">
+            <h2>What is Autism</h2>
+            <p class="hidden-xs">
+                text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text
+                <li>type1 info</li>
+                <li>type2 info</li>
+                <li>type3 info</li>
+            </p>
+            <h2>Symptom</h2>
+            <p class="hidden-xs">
+                text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text
+            <li>info info info info</li>
+            <li>info info info info</li>
+            <li>info info info info</li>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row row-content align-items-center">
+        <div  class="col-12 col-sm-4 col-md-3">
+            <h1>How we Help</h1>
+        </div>
+        <div  class="col col-sm-4 col-md-9">
+            <h2>Product Benefit</h2>
+            <p class="hidden-xs">
+                text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Container (Contact Section) -->
+<div id="elearning" class="container">
+  <h1>Login &amp; Sign Up</h1>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   tempor incididunt ut labore et dolore magna aliqua. </p>
+   <div class="col-md-6">
+        <h2> <i class="fa fa-lock"></i>    Login</h2>
+
+       <p>Enter your email adress and password to log in:</p>
+       <div class="form-group">
+           <label label-default="" for="email">Email:</label>
+           <input type="email" class="form-control" id="email" placeholder="Enter email"
+           name="email">
+       </div>
+       <div class="form-group">
+           <label label-default="" for="pwd">Password:</label>
+           <input type="password" class="form-control" id="pwd"
+           placeholder="Enter password" name="pwd">
+       </div>
+        <div class="sbutton">
+               <button type="submit" class="btn">Sign In!</button>
+                <a href="#" class="btn">Forgot password?</a>
+                 </div>
+       <h3>or </h3>
+           <div class="social-login-buttons">
+              <a href="#" class="fb btn">
+                 <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+              </a>
+              <a href="#" class="twitter btn">
+                 <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+              </a>
+               <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                </i> Login with Google
+               </a>
+           </div>
+   </div>
+   <div class="col-md-6">
+       <h2><i class="fa fa-pencil"></i>    Sign Up Now</h2>
+           <p>Fill in the form below to get instant access:</p>
+
+       <form role="form" action="" method="post" class="registration-form">
+              <div class="form-group">
+                 <label for="form-first-name">First name</label>
+                 <input type="text" name="form-first-name" placeholder=" Enter First name" class="form-first-name form-control" id="form-first-name">
+              </div>
+              <div class="form-group">
+                 <label for="form-last-name" >Last name</label>
+                 <input type="text" name="form-last-name" placeholder="Enter Last name" class="form-last-name form-control" id="form-last-name">
+              </div>
+              <div class="form-group">
+                 <label for="form-email">Email</label>
+                 <input type="text" name="form-email" placeholder="Enter email" class="form-email form-control" id="form-email">
+              </div>
+                 <div class="sbutton">
+               <button type="submit" class="btn">Sign Up!</button>
+                 </div>
+           </form>
+        </div>
+   </div>
+
+
+
+<!--Footer-->
+<footer class="footer-distributed">
+  <div class="footer-left">
+     <img src="logo.png" id="footer-logo" alt="The InterAcT-Logo">
+     <div class="footer-links">
+        <a href="#home">Home</a>
+        ·
+        <a href="#products">Products</a>
+        ·
+        <a href="#learn">Learn</a>
+        ·
+        <a href="#elearning">E-Learn</a>
+     </div>
+     <p class="footer-company-name">InterAcT &copy; 2019</p>
+  </div>
+  <div class="footer-center">
+     <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span> AdressLine 1 </span> Dublin, Ireland</p>
+     </div>
+     <div>
+        <i class="fa fa-phone"></i>
+        <p>+353 123 456</p>
+     </div>
+     <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#"><span class="__cf_email__" >example@mailadress.ie</span></a></p>
+     </div>
+  </div>
+  <div class="footer-right">
+     <p class="footer-company-about">
+        <span>About InterAcT</span>
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+     </p>
+     <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+     </div>
+  </div>
+</footer>
+
+
+<script>
+// scroll animation functionality
+
+$(document).ready(function(){
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+    
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+  
+        var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+      });
+    });
+  });
+  
+  //sidenav toggle functionality
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  } 
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  //increase, decrease, reset functionality
+  $(document).ready(function(){
+  var resize = new Array('body');
+  var sizeh1 = $("h1").css("font-size");
+  var sizeh2 = $("h2").css("font-size");
+  var sizeh3 = $("h3").css("font-size");
+  var sizeh4 = $("h4").css("font-size");
+  resize = resize.join(',');
+  
+  //resets the font size when "reset" is clicked
+  var resetFont = $(resize).css('font-size');
+  var reseth1 = sizeh1;
+  var reseth2 = sizeh2;
+  var reseth3 = sizeh3;
+  var reseth4 = sizeh4;
+  console.log(reseth4);
+    $("#resetFontSize").click(function(){
+      $(resize).css('font-size', resetFont);
+      $("h1").css('font-size', reseth1);
+      $("h2").css('font-size', reseth2);
+      $("h3").css('font-size', reseth3);
+      $("h4").css('font-size', reseth4);
+    });
+  
+  //increases font size when "+" is clicked
+  $("#increase").click(function(){
+    var originalFontSize = $(resize).css('font-size');
+    var originalFontNumber = parseFloat(originalFontSize, 10);
+    var newFontSize = originalFontNumber*1.1;
+    $( "h1" ).css( "font-size", "+=1" );
+    $( "h2" ).css( "font-size", "+=1" );
+    $( "h3" ).css( "font-size", "+=1" );
+    $( "h4" ).css( "font-size", "+=1" );
+    var test = $( "h4" ).css( "font-size");
+    console.log(test);
+    $(resize).css('font-size', newFontSize);
+    return false;
+  });
+  
+  //decrease font size when "-" is clicked
+  $("#decrease").click(function(){
+    var originalFontSize = $(resize).css('font-size');
+    var originalFontNumber = parseFloat(originalFontSize, 10);
+    var newFontSize = originalFontNumber*0.8;
+    $( "h1" ).css( "font-size", "-=1" );
+    $( "h2" ).css( "font-size", "-=1" );
+    $( "h3" ).css( "font-size", "-=1" );
+    $( "h4" ).css( "font-size", "-=1" );
+    $(resize).css('font-size', newFontSize);
+    return false;
+  });
+});
+
+$(document).ready(function(){
+  var font = $('body').css('font-family');
+
+  $("#resetFont").click(function(){
+    $("body").css("font-family", font);
+  });
+
+  $("#lato").click(function(){
+    $('body').css("font-family", "Lato");
+    var newFont = $('body').css('font-family');
+  });
+  
+  $("#nunito").click(function(){
+    $('body').css("font-family", "Nunito");
+    var newFont = $('body').css('font-family');
+  });
+
+  $("#arial").click(function(){
+      $('body').css("font-family", "Arial");
+      var newFont = $('body').css('font-family');
+    });
+
+  $("#arimo").click(function(){
+    $('body').css("font-family", "Arimo");
+    var newFont = $('body').css('font-family');
+  });
+  console.log(font);
+});
+
+$(document).ready(function(){
+
+  $("#grey").click(function(){
+    $('body').addClass("greyscale")
+  });
+
+  $("#resetGrey").click(function(){
+    $('body').removeClass("greyscale")
+  });
+});
+
+  </script>
+</body>
+</html>
+
