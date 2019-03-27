@@ -4,17 +4,17 @@ body {
     color: #818181;
   }
   h1 {
-      font-size: 32px !important;
+      font-size: 3rem !important;
   }
   h2 {
-    font-size: 24px;
+    font-size: 2rem;
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
     margin-bottom: 30px;
   }
   h4 {
-    font-size: 19px;
+    font-size: 2em;
     line-height: 1.375em;
     color: #303030;
     font-weight: 400;
@@ -81,20 +81,6 @@ body {
     padding-left: 100px;
   }
 
-  /* ====== Media queires for about section ====== */
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      padding-left: 0;
-      padding-top: 50px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
-    }
-  }
-  
   /* ====== Navigation ====== */
   .navbar {
     margin-bottom: 0;
@@ -130,80 +116,13 @@ body {
     height: 60px;
     width: auto; 
   }
-/* ====== Media queries for navigation ====== */
-  @media only screen and (max-width: 995px) {
-    .navbar-brand img {
-      height: 40px;
-      width: auto; 
-    }
-    .navbar {
-      margin-bottom: 0;
-      background-color: #008080;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      height: 80px;
-      font-family: Montserrat, sans-serif;
-    }
-  }
-  @media only screen and (max-width: 767px) {
-    .navbar-brand img {
-      height: 40px;
-      width: auto; 
-    }
-    .navbar {
-      margin-bottom: 0;
-      background-color: #008080;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      height: 80px;
-      font-family: Montserrat, sans-serif;
-    }
-  }
 
-  
   .navbar-collapse {
   text-align: center;
   background-color: #008080;
   }
   
-  /* ====== Slide animation ====== */
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  
+ 
   /* ====== E-Learning form section ====== */
 input,
 .btn-form {
@@ -277,7 +196,7 @@ button[type=submit]:hover {
 
 /* The logo */
 #footer-logo{
-	width: 20%;
+	width: 25%;
 	height:auto;
 	display: block;
 	margin-left: auto;
@@ -301,7 +220,7 @@ button[type=submit]:hover {
 
  .footer-company-name{
 	color:  #8f9296;
-	font-size: 14px;
+	font-size: 1rem;
 	font-weight: normal;
 	margin: 0;
 }
@@ -314,7 +233,7 @@ button[type=submit]:hover {
 .footer-center i{
 	background-color:  #33383b;
 	color: #ffffff;
-	font-size: 25px;
+	font-size: 1.5rem;
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
@@ -339,7 +258,7 @@ button[type=submit]:hover {
 .footer-center p span{
 	display:block;
 	font-weight: normal;
-	font-size:14px;
+	font-size:1.5rem;
 	line-height:2;
 }
 
@@ -364,7 +283,7 @@ button[type=submit]:hover {
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 14px;
+	font-size: 1.5rem;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -389,25 +308,6 @@ button[type=submit]:hover {
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
-
-/*media queries */
-@media (max-width: 880px) {
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-}
-/*END Media Query*/
-
-
 
 
 /* ===== sidenav for adjusting website colours and font=====*/
@@ -470,8 +370,7 @@ margin-bottom: 0;
   padding: 10px 10px 10px 10px 
 }
 
-#nav-div {
-  
+#nav-div {  
   position: fixed;
   color: white;
 }
@@ -490,11 +389,6 @@ margin-bottom: 0;
 }
 
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 .greyscale {
     -moz-filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -512,10 +406,12 @@ margin-bottom: 0;
 
 }
 
-.products-img {
+video {
   height: 250px;
-  width: auto;
-}
+ /* width: auto;*/
+ width:250px;
+  margin-bottom: 15px;
+ }
 
 
 
@@ -528,7 +424,7 @@ margin-bottom: 0;
 
 .learn-left-align {
   height: 400px;
-  width: auto;
+  width:  auto;
   padding-left: 200px;
   padding-top: 100px;
 }
@@ -596,4 +492,55 @@ width: auto;
 
 .center {
   text-align: center;
+}
+
+img[src*="girl"]{
+	width:auto;
+	height:50%;
+	vertical-align: middle;
+	border-radius: 50%;
+	background-color: #aecbcc;
+}
+
+
+.trans{
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  color: #666;
+}
+.trans:hover {
+  color: #000;
+}
+.trans::before {
+  content: "";
+
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #aecbcc 50%, transparent 50%);
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.collapsible:checked ~ #expand {
+  height: 250px;
+}
+.collapsible:checked ~ .trans::before {
+  background: radial-gradient(ellipse at center, #055e61 50%, transparent 50%);
+}
+.collapsible:checked ~ #expand {
+	border-bottom: 1px solid #CCC;
+}
+
+input[type='checkbox'] {
+  display: none;
 }
